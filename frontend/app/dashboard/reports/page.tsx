@@ -116,13 +116,13 @@ export default function ReportsPage() {
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">Income</span>
                 <span className="text-sm font-bold text-success">
-                  +${summary.income.toLocaleString()}
+                  +₹{summary.income.toLocaleString('en-IN')}
                 </span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm text-muted-foreground">Expenses</span>
                 <span className="text-sm font-bold text-foreground">
-                  -${summary.expenses.toLocaleString()}
+                  -₹{summary.expenses.toLocaleString('en-IN')}
                 </span>
               </div>
               <div className="border-t border-border pt-3 flex items-center justify-between">
@@ -130,7 +130,7 @@ export default function ReportsPage() {
                   Net Savings
                 </span>
                 <span className="text-sm font-bold text-primary">
-                  ${summary.savings.toLocaleString()}
+                  ₹{summary.savings.toLocaleString('en-IN')}
                 </span>
               </div>
             </div>

@@ -120,7 +120,7 @@ export default function BudgetsPage() {
                 </Select>
               </div>
               <div className="flex flex-col gap-2">
-                <Label className="text-foreground">Monthly Limit ($)</Label>
+                <Label className="text-foreground">Monthly Limit (₹)</Label>
                 <Input
                   type="number"
                   placeholder="500"
@@ -145,7 +145,7 @@ export default function BudgetsPage() {
               Monthly Overview
             </h3>
             <p className="text-sm text-muted-foreground">
-              ${totalSpent.toLocaleString()} of ${totalLimit.toLocaleString()} budget used
+              ₹{totalSpent.toLocaleString('en-IN')} of ₹{totalLimit.toLocaleString('en-IN')} budget used
             </p>
           </div>
           <span
@@ -230,7 +230,7 @@ export default function BudgetsPage() {
               <div className="flex justify-between text-sm mb-2">
                 <span className="text-muted-foreground">Spent</span>
                 <span className="font-bold text-foreground">
-                  ${budget.spent.toLocaleString()} / ${budget.limit.toLocaleString()}
+                  ₹{budget.spent.toLocaleString('en-IN')} / ₹{budget.limit.toLocaleString('en-IN')}
                 </span>
               </div>
               <div className="w-full bg-secondary rounded-full h-2">
@@ -243,7 +243,7 @@ export default function BudgetsPage() {
                 />
               </div>
               <p className="text-xs text-muted-foreground mt-2">
-                ${Math.max(budget.limit - budget.spent, 0).toLocaleString()}{" "}
+                ₹{Math.max(budget.limit - budget.spent, 0).toLocaleString('en-IN')}{" "}
                 remaining
               </p>
             </div>

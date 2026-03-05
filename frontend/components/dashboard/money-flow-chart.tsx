@@ -58,14 +58,15 @@ export function MoneyFlowChart() {
               tickFormatter={(value) => `₹${value / 1000}k`}
             />
             <Tooltip
+              cursor={false}
               contentStyle={{
-                background: "var(--card)",
-                border: "1px solid var(--border)",
-                borderRadius: "8px",
-                color: "var(--foreground)",
+                backgroundColor: "#1E293B",
+                border: "none",
+                borderRadius: "10px",
+                color: "#ffffff",
                 fontSize: 12,
               }}
-              formatter={(value: number) => [`₹${value.toLocaleString('en-IN')}`, ""]}
+              formatter={(value: number, name: string) => [`₹${value.toLocaleString('en-IN')}`, name]}
             />
             <Legend
               verticalAlign="top"
