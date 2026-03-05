@@ -43,7 +43,7 @@ export function AppHeader({ title, onMenuToggle }: AppHeaderProps) {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
           <Input
             placeholder="Search transactions..."
-            className="pl-9 w-64 bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+            className="pl-9 w-64 bg-card border-border rounded-lg focus-visible:ring-1 focus-visible:ring-primary text-foreground placeholder:text-muted-foreground transition-all duration-200"
           />
         </div>
 

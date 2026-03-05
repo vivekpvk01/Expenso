@@ -73,9 +73,9 @@ export function SavingsRate() {
 }
 
 const topExpenses = [
-  { label: "Housing & Utilities", percent: 45, color: "bg-primary" },
-  { label: "Food & Dining", percent: 25, color: "bg-chart-2" },
-  { label: "Entertainment", percent: 15, color: "bg-chart-2/50" },
+  { label: "Housing & Utilities", percent: 45, color: "bg-chart-1" },
+  { label: "Food & Dining", percent: 25, color: "bg-chart-3" },
+  { label: "Entertainment", percent: 15, color: "bg-chart-4" },
 ]
 
 export function TopExpenses() {

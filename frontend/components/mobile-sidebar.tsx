@@ -76,10 +76,10 @@ export function MobileSidebar({ open, onClose }: MobileSidebarProps) {
                 href={item.href}
                 onClick={onClose}
                 className={cn(
-                  "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all text-sm font-medium",
+                  "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 text-sm font-medium",
                   isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                    ? "bg-blue-50 text-blue-600 dark:bg-blue-900/40 dark:text-blue-400"
+                    : "text-muted-foreground hover:bg-slate-100 hover:text-foreground dark:hover:bg-slate-800"
                 )}
               >
                 <item.icon className="size-5 shrink-0" />

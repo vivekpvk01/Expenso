@@ -88,7 +88,7 @@ export function RecentTransactions() {
             {transactions.map((tx) => (
               <tr
                 key={`${tx.merchant}-${tx.date}`}
-                className="hover:bg-secondary/30 transition-colors"
+                className="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200"
               >
                 <td className="py-4 px-6">
                   <div className="flex items-center gap-3">
@@ -119,7 +119,7 @@ export function RecentTransactions() {
                 <td
                   className={cn(
                     "py-4 px-6 text-sm font-bold text-right",
-                    tx.amount > 0 ? "text-success" : "text-foreground"
+                    tx.amount > 0 ? "text-emerald-600 dark:text-emerald-500" : "text-red-500 dark:text-red-400"
                   )}
                 >
                   {tx.amount > 0 ? "+" : ""}₹{Math.abs(tx.amount).toLocaleString('en-IN')}

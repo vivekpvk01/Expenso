@@ -39,7 +39,17 @@ export function MoneyFlowChart() {
       </div>
       <div className="flex-1 min-h-[250px]">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} barGap={4} barSize={16}>
+          <BarChart data={data} barGap={6} barSize={20}>
+            <defs>
+              <linearGradient id="colorIncome" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="var(--chart-1)" stopOpacity={0.9} />
+                <stop offset="95%" stopColor="var(--chart-2)" stopOpacity={0.9} />
+              </linearGradient>
+              <linearGradient id="colorExpenses" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="var(--muted-foreground)" stopOpacity={0.5} />
+                <stop offset="95%" stopColor="var(--muted-foreground)" stopOpacity={0.2} />
+              </linearGradient>
+            </defs>
             <CartesianGrid
               strokeDasharray="3 3"
               stroke="var(--border)"
@@ -78,15 +88,16 @@ export function MoneyFlowChart() {
             <Bar
               dataKey="income"
               name="Income"
-              fill="var(--primary)"
-              radius={[4, 4, 0, 0]}
+              fill="url(#colorIncome)"
+              radius={[6, 6, 0, 0]}
+              animationDuration={1500}
             />
             <Bar
               dataKey="expenses"
               name="Expenses"
-              fill="var(--muted-foreground)"
-              opacity={0.4}
-              radius={[4, 4, 0, 0]}
+              fill="url(#colorExpenses)"
+              radius={[6, 6, 0, 0]}
+              animationDuration={1500}
             />
           </BarChart>
         </ResponsiveContainer>

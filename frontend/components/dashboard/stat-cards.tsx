@@ -11,12 +11,14 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
+type TrendOption = "up" | "down" | "neutral";
+
 const stats = [
   {
     label: "Total Balance",
     value: "₹1,25,000",
     change: "+5.2%",
-    trend: "up" as const,
+    trend: "up" as TrendOption,
     icon: Landmark,
     iconBg: "bg-primary/10",
     iconColor: "text-primary",
@@ -25,7 +27,7 @@ const stats = [
     label: "Monthly Spend",
     value: "₹32,500",
     change: "+1.2%",
-    trend: "up" as const,
+    trend: "down" as TrendOption,
     icon: CreditCard,
     iconBg: "bg-destructive/10",
     iconColor: "text-destructive",
@@ -34,7 +36,7 @@ const stats = [
     label: "Income",
     value: "₹75,000",
     change: "0.0%",
-    trend: "neutral" as const,
+    trend: "neutral" as TrendOption,
     icon: IndianRupee,
     iconBg: "bg-success/10",
     iconColor: "text-success",
@@ -43,7 +45,7 @@ const stats = [
     label: "Savings",
     value: "₹18,500",
     change: "+8.5%",
-    trend: "up" as const,
+    trend: "up" as TrendOption,
     icon: PiggyBank,
     iconBg: "bg-chart-2/10",
     iconColor: "text-chart-2",
@@ -56,7 +58,7 @@ export function StatCards() {
       {stats.map((stat) => (
         <div
           key={stat.label}
-          className="bg-card p-5 rounded-xl border border-border shadow-sm"
+          className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
         >
           <div className="flex justify-between items-start mb-4">
             <div

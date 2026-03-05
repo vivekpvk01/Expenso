@@ -161,7 +161,7 @@ export default function TransactionsPage() {
               {paged.map((tx) => {
                 const Icon = iconMap[tx.category] || ShoppingCart
                 return (
-                  <tr key={tx.id} className="hover:bg-secondary/30 transition-colors">
+                  <tr key={tx.id} className="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200">
                     <td className="py-4 px-6">
                       <div className="flex items-center gap-3">
                         <div className={cn("p-2 rounded-full", tx.amount > 0 ? "bg-success/10" : "bg-secondary")}>
@@ -180,7 +180,7 @@ export default function TransactionsPage() {
                     </td>
                     <td className="py-4 px-6 text-sm text-muted-foreground">{formatDate(tx.date)}</td>
                     <td className="py-4 px-6 text-sm text-muted-foreground">{tx.method}</td>
-                    <td className={cn("py-4 px-6 text-sm font-bold text-right", tx.amount > 0 ? "text-success" : "text-foreground")}>
+                    <td className={cn("py-4 px-6 text-sm font-bold text-right", tx.amount > 0 ? "text-emerald-600 dark:text-emerald-500" : "text-red-500 dark:text-red-400")}>
                       {tx.amount > 0 ? "+" : "-"}₹{Math.abs(tx.amount).toLocaleString('en-IN')}
                     </td>
                     <td className="py-4 px-6 text-right">
