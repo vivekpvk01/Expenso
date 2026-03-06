@@ -54,7 +54,7 @@ const transactions = [
 
 export function RecentTransactions() {
   return (
-    <div className="xl:col-span-2 bg-card rounded-xl border border-border shadow-sm overflow-hidden">
+    <div className="xl:col-span-2 bg-card rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
       <div className="p-6 border-b border-border flex justify-between items-center">
         <h3 className="text-lg font-bold text-foreground">
           Recent Transactions

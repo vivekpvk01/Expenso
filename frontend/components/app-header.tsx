@@ -43,7 +43,7 @@ export function AppHeader({ title, onMenuToggle }: AppHeaderProps) {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
           <Input
             placeholder="Search transactions..."
-            className="pl-9 w-64 bg-card border-border rounded-lg focus-visible:ring-1 focus-visible:ring-primary text-foreground placeholder:text-muted-foreground transition-all duration-200"
+            className="pl-9 w-64 bg-white dark:bg-slate-900 border-[#E2E8F0] dark:border-slate-800 rounded-lg focus-visible:ring-2 focus-visible:ring-blue-500 text-foreground placeholder:text-muted-foreground transition-all duration-200"
           />
         </div>
 
@@ -73,7 +73,7 @@ export function AppHeader({ title, onMenuToggle }: AppHeaderProps) {
         <Button
           variant="ghost"
           size="icon"
-          className="relative text-muted-foreground hover:text-foreground"
+          className="relative text-muted-foreground hover:text-foreground hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
         >
           <Bell className="size-5" />
           <span className="absolute top-2 right-2 size-2 bg-destructive rounded-full" />

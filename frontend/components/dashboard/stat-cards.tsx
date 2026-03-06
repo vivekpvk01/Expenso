@@ -20,8 +20,8 @@ const stats = [
     change: "+5.2%",
     trend: "up" as TrendOption,
     icon: Landmark,
-    iconBg: "bg-primary/10",
-    iconColor: "text-primary",
+    iconBg: "bg-blue-100 dark:bg-blue-900/40",
+    iconColor: "text-blue-600 dark:text-blue-400",
   },
   {
     label: "Monthly Spend",
@@ -29,8 +29,8 @@ const stats = [
     change: "+1.2%",
     trend: "down" as TrendOption,
     icon: CreditCard,
-    iconBg: "bg-destructive/10",
-    iconColor: "text-destructive",
+    iconBg: "bg-red-100 dark:bg-red-900/40",
+    iconColor: "text-red-600 dark:text-red-400",
   },
   {
     label: "Income",
@@ -38,8 +38,8 @@ const stats = [
     change: "0.0%",
     trend: "neutral" as TrendOption,
     icon: IndianRupee,
-    iconBg: "bg-success/10",
-    iconColor: "text-success",
+    iconBg: "bg-emerald-100 dark:bg-emerald-900/40",
+    iconColor: "text-emerald-600 dark:text-emerald-400",
   },
   {
     label: "Savings",
@@ -47,8 +47,8 @@ const stats = [
     change: "+8.5%",
     trend: "up" as TrendOption,
     icon: PiggyBank,
-    iconBg: "bg-chart-2/10",
-    iconColor: "text-chart-2",
+    iconBg: "bg-indigo-100 dark:bg-indigo-900/40",
+    iconColor: "text-indigo-600 dark:text-indigo-400",
   },
 ]
 
@@ -58,7 +58,7 @@ export function StatCards() {
       {stats.map((stat) => (
         <div
           key={stat.label}
-          className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+          className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300"
         >
           <div className="flex justify-between items-start mb-4">
             <div

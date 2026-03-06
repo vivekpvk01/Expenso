@@ -33,7 +33,7 @@ const budgets = [
 
 export function BudgetHealth() {
   return (
-    <div className="bg-card rounded-xl border border-border shadow-sm p-6">
+    <div className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300">
       <h3 className="text-lg font-bold text-foreground mb-6">Budget Health</h3>
       <div className="flex flex-col gap-6">
         {budgets.map((budget) => {

@@ -10,7 +10,7 @@ export function SavingsRate() {
   const strokeDasharray = `${(percentage / 100) * circumference} ${circumference}`
 
   return (
-    <div className="bg-card p-6 rounded-xl border border-border shadow-sm">
+    <div className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300">
       <h3 className="text-lg font-bold text-foreground mb-2">Savings Rate</h3>
       <div className="flex items-center justify-between">
         <div className="relative size-32">
@@ -80,7 +80,7 @@ const topExpenses = [
 
 export function TopExpenses() {
   return (
-    <div className="bg-card p-6 rounded-xl border border-border shadow-sm">
+    <div className="bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300">
       <h3 className="text-lg font-bold text-foreground mb-4">Top Expenses</h3>
       <div className="flex flex-col gap-4">
         {topExpenses.map((expense) => (

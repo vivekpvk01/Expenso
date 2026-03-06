@@ -4,95 +4,99 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #F8FAFC; /* Slate 50 */
-  --foreground: #0F172A; /* Slate 900 */
+  --background: #F8FAFC;
+  --foreground: #0F172A;
   --card: #FFFFFF;
   --card-foreground: #0F172A;
   --popover: #FFFFFF;
   --popover-foreground: #0F172A;
-  --primary: #1E40AF; /* Blue 800 */
+  --primary: #2563EB;
   --primary-foreground: #FFFFFF;
-  --secondary: #F1F5F9; /* Slate 100 */
-  --secondary-foreground: #1E293B; /* Slate 800 */
+  --secondary: #F1F5F9;
+  --secondary-foreground: #0F172A;
   --muted: #F1F5F9;
-  --muted-foreground: #64748B; /* Slate 500 */
+  --muted-foreground: #64748B;
   --accent: #F1F5F9;
-  --accent-foreground: #1E40AF;
+  --accent-foreground: #2563EB;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   --success: #10B981;
   --success-foreground: #FFFFFF;
   --warning: #F59E0B;
   --warning-foreground: #FFFFFF;
-  --border: #E2E8F0; /* Slate 200 */
+  --border: #E2E8F0;
   --input: #E2E8F0;
-  --ring: #1E40AF;
-  
-  /* Premium diverse chart colors */
-  --chart-1: #3B82F6; /* Blue */
-  --chart-2: #8B5CF6; /* Violet */
-  --chart-3: #10B981; /* Emerald */
-  --chart-4: #F59E0B; /* Amber */
-  --chart-5: #06B6D4; /* Cyan */
-  --chart-6: #F43F5E; /* Rose */
-  
-  --radius: 0.75rem; /* More rounded premium feel (xl) */
-  
+  --ring: #2563EB;
+
+  /* Phase 5 Semantic Chart Colors */
+  --chart-1: #22C55E;
+  /* Income */
+  --chart-2: #EF4444;
+  /* Expenses */
+  --chart-3: #6366F1;
+  /* Savings */
+  --chart-4: #F59E0B;
+  /* Investments */
+  --chart-5: #06B6D4;
+  /* Categories */
+  --chart-6: #10B981;
+
+  --radius: 0.75rem;
+
   --sidebar: #FFFFFF;
   --sidebar-foreground: #0F172A;
-  --sidebar-primary: #1E40AF;
+  --sidebar-primary: #2563EB;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #F1F5F9; /* Slate 100 */
-  --sidebar-accent-foreground: #1E40AF;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #2563EB;
   --sidebar-border: #E2E8F0;
-  --sidebar-ring: #1E40AF;
+  --sidebar-ring: #2563EB;
   --surface: #FFFFFF;
 }
 
 .dark {
-  --background: #0F172A; /* Slate 900 */
-  --foreground: #F8FAFC; /* Slate 50 */
-  --card: #1E293B; /* Slate 800 */
-  --card-foreground: #F8FAFC;
-  --popover: #1E293B;
-  --popover-foreground: #F8FAFC;
-  --primary: #3B82F6; /* Blue 500 */
+  --background: #0B1120;
+  --foreground: #F9FAFB;
+  --card: #111827;
+  --card-foreground: #F9FAFB;
+  --popover: #111827;
+  --popover-foreground: #F9FAFB;
+  --primary: #3B82F6;
   --primary-foreground: #FFFFFF;
-  --secondary: #334155; /* Slate 700 */
-  --secondary-foreground: #F8FAFC;
-  --muted: #334155;
-  --muted-foreground: #94A3B8; /* Slate 400 */
-  --accent: #1E293B; /* Slate 800 */
-  --accent-foreground: #93C5FD;
+  --secondary: #1F2937;
+  --secondary-foreground: #F9FAFB;
+  --muted: #1F2937;
+  --muted-foreground: #9CA3AF;
+  --accent: #1F2937;
+  --accent-foreground: #3B82F6;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   --success: #10B981;
   --success-foreground: #FFFFFF;
   --warning: #F59E0B;
   --warning-foreground: #FFFFFF;
-  --border: #334155; /* Slate 700 */
-  --input: #334155;
+  --border: #1F2937;
+  --input: #1F2937;
   --ring: #3B82F6;
-  
-  /* Premium diverse chart colors dark */
-  --chart-1: #60A5FA; /* Blue 400 */
-  --chart-2: #A78BFA; /* Violet 400 */
-  --chart-3: #34D399; /* Emerald 400 */
-  --chart-4: #FBBF24; /* Amber 400 */
-  --chart-5: #22D3EE; /* Cyan 400 */
-  --chart-6: #FB7185; /* Rose 400 */
-  
+
+  --chart-1: #22C55E;
+  --chart-2: #EF4444;
+  --chart-3: #6366F1;
+  --chart-4: #F59E0B;
+  --chart-5: #06B6D4;
+  --chart-6: #10B981;
+
   --radius: 0.75rem;
-  
-  --sidebar: #0F172A; /* Slate 900 */
-  --sidebar-foreground: #F8FAFC;
+
+  --sidebar: #111827;
+  --sidebar-foreground: #F9FAFB;
   --sidebar-primary: #3B82F6;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #1E293B; /* Slate 800 */
-  --sidebar-accent-foreground: #93C5FD;
-  --sidebar-border: #334155;
+  --sidebar-accent: #1F2937;
+  --sidebar-accent-foreground: #3B82F6;
+  --sidebar-border: #1F2937;
   --sidebar-ring: #3B82F6;
-  --surface: #1E293B;
+  --surface: #111827;
 }
 
 @theme inline {
@@ -145,6 +149,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -155,9 +160,11 @@
   width: 6px;
   height: 6px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--muted-foreground);
   border-radius: 20px;

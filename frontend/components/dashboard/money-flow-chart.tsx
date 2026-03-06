@@ -22,7 +22,7 @@ const data = [
 
 export function MoneyFlowChart() {
   return (
-    <div className="lg:col-span-2 bg-card p-6 rounded-xl border border-border shadow-sm flex flex-col">
+    <div className="lg:col-span-2 bg-card p-6 rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h3 className="text-lg font-bold text-foreground">
